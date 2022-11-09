@@ -1,5 +1,4 @@
-# workers-club
-
+#Create Workers project
 1. Create a new project: 
    $  wrangler init <YOUR_WORKER>
    
@@ -18,8 +17,28 @@
 5. Publish your project
    $  wrangler publish
    You can preview your Worker at <YOUR_WORKER>.<YOUR_SUBDOMAIN>.workers.dev.
-   
-   
- 
-# Connect with git
+6. df
 
+---
+#Connect with Git
+
+(In the project directory)
+
+-> Create a new repository on the command line
+   ```
+   echo "# test" >> README.md
+   git init
+   git add README.md
+   git commit -m "first commit"
+   git branch -M main
+   git remote add origin https://github.com/tpimentacf/<repo_name>.git
+   git push -u origin main
+   ```
+
+
+-> Push an existing repository from the command line
+   ```
+   git remote add origin https://github.com/tpimentacf/workers-club.git
+   git branch -M main
+   git push -u origin main
+   ```
