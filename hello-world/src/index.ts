@@ -25,6 +25,12 @@ export default {
 		env: Env,
 		ctx: ExecutionContext
 	): Promise<Response> {
-		return new Response("Hello World!");
+		console.log(request.url);
+		return new Response("Hello World!", {
+			headers: {
+				'content-type': 'text/plain',
+			}
+		});
 	},
 };
+//test
